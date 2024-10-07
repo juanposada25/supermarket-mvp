@@ -1,6 +1,6 @@
 ﻿namespace Supermarket_mvp.Views
 {
-    partial class PayModelView
+    partial class PayModeView
     {
         /// <summary>
         /// Required designer variable.

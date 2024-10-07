@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|c:\\users\\juand\\desktop\\estudio\\supermarket-mvp\\supermarket-mvp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|solutionrelative:supermarket-mvp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|c:\\users\\juand\\desktop\\estudio\\supermarket-mvp\\supermarket-mvp\\presenters\\paymodepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|solutionrelative:supermarket-mvp\\presenters\\paymodepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\Program.cs",
-              "RelativeDocumentMoniker": "Supermarket-mvp\\Program.cs",
-              "ToolTip": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\Program.cs",
-              "RelativeToolTip": "Supermarket-mvp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Title": "PayModePresenter.cs",
+              "DocumentMoniker": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\Presenters\\PayModePresenter.cs",
+              "RelativeDocumentMoniker": "Supermarket-mvp\\Presenters\\PayModePresenter.cs",
+              "ToolTip": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\Presenters\\PayModePresenter.cs",
+              "RelativeToolTip": "Supermarket-mvp\\Presenters\\PayModePresenter.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAIA7wFAAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T20:52:45.968Z",
+              "WhenOpened": "2024-10-07T21:18:06.801Z",
               "EditorCaption": ""
             }
           ]
