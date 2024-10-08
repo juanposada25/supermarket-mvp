@@ -56,11 +56,11 @@ namespace Supermarket_mvp._Repositories
                 connection.Open();
                 command.Connection = connection;
                 command.CommandText = @"UPDATE Customer SET Customer_First_Name = @first_Name,
-                                        Customer_Last_Name = @last_Name
-                                        Customer_Document = @document
-                                        Customer_Address = @address
-                                        Customer_Birthday = @birthday
-                                        Customer_Phone = @phone
+                                        Customer_Last_Name = @last_Name,
+                                        Customer_Document = @document,
+                                        Customer_Address = @address,
+                                        Customer_Birthday = @birthday,
+                                        Customer_Phone = @phone,
                                         Customer_Email = @email
                                         WHERE Customer_Id = @Id";
                 command.Parameters.Add("@first_Name", SqlDbType.NVarChar).Value = customerModel.First_Name;

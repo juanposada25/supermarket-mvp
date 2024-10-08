@@ -29,43 +29,43 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
             tabControl1 = new TabControl();
             tabPageCustomerList = new TabPage();
-            tabPageCustomerDetail = new TabPage();
-            label2 = new Label();
-            TxtSearch = new TextBox();
-            BtnSearch = new Button();
-            DgCustomer = new DataGridView();
-            BtnNew = new Button();
-            BtnEdit = new Button();
-            BtnDelete = new Button();
             BtnClose = new Button();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            TxtCustomerId = new TextBox();
-            TxtCustomerFirst_Name = new TextBox();
-            TxtCustomerLast_Name = new TextBox();
-            TxtCustomerDocument = new TextBox();
-            TxtCustomerAddress = new TextBox();
-            TxtCustomerBirthday = new TextBox();
-            TxtCustomerPhone = new TextBox();
-            TxtCustomerEmail = new TextBox();
-            BtnSave = new Button();
+            BtnDelete = new Button();
+            BtnEdit = new Button();
+            BtnNew = new Button();
+            DgCustomer = new DataGridView();
+            BtnSearch = new Button();
+            TxtSearch = new TextBox();
+            label2 = new Label();
+            tabPageCustomerDetail = new TabPage();
             BtnCancel = new Button();
+            BtnSave = new Button();
+            TxtCustomerEmail = new TextBox();
+            TxtCustomerPhone = new TextBox();
+            TxtCustomerBirthday = new TextBox();
+            TxtCustomerAddress = new TextBox();
+            TxtCustomerDocument = new TextBox();
+            TxtCustomerLast_Name = new TextBox();
+            TxtCustomerFirst_Name = new TextBox();
+            TxtCustomerId = new TextBox();
+            label10 = new Label();
+            label9 = new Label();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
             tabPageCustomerList.SuspendLayout();
-            tabPageCustomerDetail.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DgCustomer).BeginInit();
+            tabPageCustomerDetail.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -78,6 +78,15 @@
             panel1.Size = new Size(887, 99);
             panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(192, 35);
+            label1.Name = "label1";
+            label1.Size = new Size(72, 20);
+            label1.TabIndex = 1;
+            label1.Text = "Customer";
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.providers;
@@ -87,15 +96,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(192, 35);
-            label1.Name = "label1";
-            label1.Size = new Size(72, 20);
-            label1.TabIndex = 1;
-            label1.Text = "Customer";
             // 
             // tabControl1
             // 
@@ -126,6 +126,88 @@
             tabPageCustomerList.Text = "Customer List ";
             tabPageCustomerList.UseVisualStyleBackColor = true;
             // 
+            // BtnClose
+            // 
+            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnClose.Image = Properties.Resources.cerrar;
+            BtnClose.Location = new Point(677, 301);
+            BtnClose.Name = "BtnClose";
+            BtnClose.Size = new Size(182, 49);
+            BtnClose.TabIndex = 7;
+            BtnClose.UseVisualStyleBackColor = true;
+            // 
+            // BtnDelete
+            // 
+            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnDelete.Image = Properties.Resources.delete;
+            BtnDelete.Location = new Point(677, 230);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(182, 49);
+            BtnDelete.TabIndex = 6;
+            BtnDelete.UseVisualStyleBackColor = true;
+            // 
+            // BtnEdit
+            // 
+            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnEdit.Image = Properties.Resources.edit;
+            BtnEdit.Location = new Point(677, 164);
+            BtnEdit.Name = "BtnEdit";
+            BtnEdit.Size = new Size(182, 51);
+            BtnEdit.TabIndex = 5;
+            BtnEdit.UseVisualStyleBackColor = true;
+            // 
+            // BtnNew
+            // 
+            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnNew.Image = Properties.Resources._new;
+            BtnNew.Location = new Point(677, 92);
+            BtnNew.Name = "BtnNew";
+            BtnNew.Size = new Size(182, 56);
+            BtnNew.TabIndex = 4;
+            BtnNew.UseVisualStyleBackColor = true;
+            // 
+            // DgCustomer
+            // 
+            DgCustomer.AllowUserToAddRows = false;
+            DgCustomer.AllowUserToDeleteRows = false;
+            DgCustomer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DgCustomer.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            DgCustomer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgCustomer.Location = new Point(32, 92);
+            DgCustomer.Name = "DgCustomer";
+            DgCustomer.ReadOnly = true;
+            DgCustomer.RowHeadersWidth = 51;
+            DgCustomer.Size = new Size(621, 262);
+            DgCustomer.TabIndex = 3;
+            // 
+            // BtnSearch
+            // 
+            BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BtnSearch.Image = Properties.Resources.search_small;
+            BtnSearch.Location = new Point(581, 33);
+            BtnSearch.Name = "BtnSearch";
+            BtnSearch.Size = new Size(72, 40);
+            BtnSearch.TabIndex = 2;
+            BtnSearch.UseVisualStyleBackColor = true;
+            // 
+            // TxtSearch
+            // 
+            TxtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            TxtSearch.Location = new Point(31, 40);
+            TxtSearch.Name = "TxtSearch";
+            TxtSearch.PlaceholderText = "Data to search";
+            TxtSearch.Size = new Size(544, 27);
+            TxtSearch.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(32, 17);
+            label2.Name = "label2";
+            label2.Size = new Size(120, 20);
+            label2.TabIndex = 0;
+            label2.Text = "Search Customer";
+            // 
             // tabPageCustomerDetail
             // 
             tabPageCustomerDetail.Controls.Add(BtnCancel);
@@ -154,215 +236,14 @@
             tabPageCustomerDetail.Text = "Customer Detail";
             tabPageCustomerDetail.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // BtnCancel
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(32, 17);
-            label2.Name = "label2";
-            label2.Size = new Size(120, 20);
-            label2.TabIndex = 0;
-            label2.Text = "Search Customer";
-            // 
-            // TxtSearch
-            // 
-            TxtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            TxtSearch.Location = new Point(31, 40);
-            TxtSearch.Name = "TxtSearch";
-            TxtSearch.Size = new Size(544, 27);
-            TxtSearch.TabIndex = 1;
-            TxtSearch.Text = "Data to search";
-            // 
-            // BtnSearch
-            // 
-            BtnSearch.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnSearch.Image = Properties.Resources.search_small;
-            BtnSearch.Location = new Point(581, 33);
-            BtnSearch.Name = "BtnSearch";
-            BtnSearch.Size = new Size(72, 40);
-            BtnSearch.TabIndex = 2;
-            BtnSearch.UseVisualStyleBackColor = true;
-            // 
-            // DgCustomer
-            // 
-            DgCustomer.AllowUserToAddRows = false;
-            DgCustomer.AllowUserToDeleteRows = false;
-            DgCustomer.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            DgCustomer.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgCustomer.Location = new Point(32, 92);
-            DgCustomer.Name = "DgCustomer";
-            DgCustomer.ReadOnly = true;
-            DgCustomer.RowHeadersWidth = 51;
-            DgCustomer.Size = new Size(621, 262);
-            DgCustomer.TabIndex = 3;
-            // 
-            // BtnNew
-            // 
-            BtnNew.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnNew.Image = Properties.Resources._new;
-            BtnNew.Location = new Point(677, 92);
-            BtnNew.Name = "BtnNew";
-            BtnNew.Size = new Size(182, 56);
-            BtnNew.TabIndex = 4;
-            BtnNew.UseVisualStyleBackColor = true;
-            // 
-            // BtnEdit
-            // 
-            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnEdit.Image = Properties.Resources.edit;
-            BtnEdit.Location = new Point(677, 164);
-            BtnEdit.Name = "BtnEdit";
-            BtnEdit.Size = new Size(182, 51);
-            BtnEdit.TabIndex = 5;
-            BtnEdit.UseVisualStyleBackColor = true;
-            // 
-            // BtnDelete
-            // 
-            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnDelete.Image = Properties.Resources.delete;
-            BtnDelete.Location = new Point(677, 230);
-            BtnDelete.Name = "BtnDelete";
-            BtnDelete.Size = new Size(182, 49);
-            BtnDelete.TabIndex = 6;
-            BtnDelete.UseVisualStyleBackColor = true;
-            // 
-            // BtnClose
-            // 
-            BtnClose.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            BtnClose.Image = Properties.Resources.cerrar;
-            BtnClose.Location = new Point(677, 301);
-            BtnClose.Name = "BtnClose";
-            BtnClose.Size = new Size(182, 49);
-            BtnClose.TabIndex = 7;
-            BtnClose.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(32, 21);
-            label3.Name = "label3";
-            label3.Size = new Size(89, 20);
-            label3.TabIndex = 0;
-            label3.Text = "Customer Id";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(263, 88);
-            label4.Name = "label4";
-            label4.Size = new Size(146, 20);
-            label4.TabIndex = 1;
-            label4.Text = "Customer Last Name";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(32, 88);
-            label5.Name = "label5";
-            label5.Size = new Size(147, 20);
-            label5.TabIndex = 2;
-            label5.Text = "Customer First Name";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(32, 172);
-            label6.Name = "label6";
-            label6.Size = new Size(131, 20);
-            label6.TabIndex = 3;
-            label6.Text = "Customer Birthday";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(471, 88);
-            label7.Name = "label7";
-            label7.Size = new Size(145, 20);
-            label7.TabIndex = 4;
-            label7.Text = "Customer Document";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(263, 172);
-            label8.Name = "label8";
-            label8.Size = new Size(117, 20);
-            label8.TabIndex = 5;
-            label8.Text = "Customer Phone";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(685, 88);
-            label9.Name = "label9";
-            label9.Size = new Size(129, 20);
-            label9.TabIndex = 6;
-            label9.Text = "Customer Address";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(471, 172);
-            label10.Name = "label10";
-            label10.Size = new Size(113, 20);
-            label10.TabIndex = 7;
-            label10.Text = "Customer Email";
-            // 
-            // TxtCustomerId
-            // 
-            TxtCustomerId.Location = new Point(32, 44);
-            TxtCustomerId.Name = "TxtCustomerId";
-            TxtCustomerId.Size = new Size(125, 27);
-            TxtCustomerId.TabIndex = 8;
-            // 
-            // TxtCustomerFirst_Name
-            // 
-            TxtCustomerFirst_Name.Location = new Point(32, 111);
-            TxtCustomerFirst_Name.Name = "TxtCustomerFirst_Name";
-            TxtCustomerFirst_Name.Size = new Size(167, 27);
-            TxtCustomerFirst_Name.TabIndex = 9;
-            // 
-            // TxtCustomerLast_Name
-            // 
-            TxtCustomerLast_Name.Location = new Point(263, 111);
-            TxtCustomerLast_Name.Name = "TxtCustomerLast_Name";
-            TxtCustomerLast_Name.Size = new Size(165, 27);
-            TxtCustomerLast_Name.TabIndex = 10;
-            // 
-            // TxtCustomerDocument
-            // 
-            TxtCustomerDocument.Location = new Point(471, 111);
-            TxtCustomerDocument.Name = "TxtCustomerDocument";
-            TxtCustomerDocument.Size = new Size(158, 27);
-            TxtCustomerDocument.TabIndex = 11;
-            // 
-            // TxtCustomerAddress
-            // 
-            TxtCustomerAddress.Location = new Point(685, 111);
-            TxtCustomerAddress.Multiline = true;
-            TxtCustomerAddress.Name = "TxtCustomerAddress";
-            TxtCustomerAddress.Size = new Size(170, 81);
-            TxtCustomerAddress.TabIndex = 12;
-            // 
-            // TxtCustomerBirthday
-            // 
-            TxtCustomerBirthday.Location = new Point(32, 195);
-            TxtCustomerBirthday.Name = "TxtCustomerBirthday";
-            TxtCustomerBirthday.Size = new Size(167, 27);
-            TxtCustomerBirthday.TabIndex = 13;
-            // 
-            // TxtCustomerPhone
-            // 
-            TxtCustomerPhone.Location = new Point(263, 195);
-            TxtCustomerPhone.Name = "TxtCustomerPhone";
-            TxtCustomerPhone.Size = new Size(165, 27);
-            TxtCustomerPhone.TabIndex = 14;
-            // 
-            // TxtCustomerEmail
-            // 
-            TxtCustomerEmail.Location = new Point(471, 195);
-            TxtCustomerEmail.Name = "TxtCustomerEmail";
-            TxtCustomerEmail.Size = new Size(158, 27);
-            TxtCustomerEmail.TabIndex = 15;
+            BtnCancel.Image = Properties.Resources.cancel;
+            BtnCancel.Location = new Point(261, 276);
+            BtnCancel.Name = "BtnCancel";
+            BtnCancel.Size = new Size(167, 73);
+            BtnCancel.TabIndex = 17;
+            BtnCancel.UseVisualStyleBackColor = true;
             // 
             // BtnSave
             // 
@@ -373,14 +254,137 @@
             BtnSave.TabIndex = 16;
             BtnSave.UseVisualStyleBackColor = true;
             // 
-            // BtnCancel
+            // TxtCustomerEmail
             // 
-            BtnCancel.Image = Properties.Resources.cancel;
-            BtnCancel.Location = new Point(261, 276);
-            BtnCancel.Name = "BtnCancel";
-            BtnCancel.Size = new Size(167, 73);
-            BtnCancel.TabIndex = 17;
-            BtnCancel.UseVisualStyleBackColor = true;
+            TxtCustomerEmail.Location = new Point(471, 195);
+            TxtCustomerEmail.Name = "TxtCustomerEmail";
+            TxtCustomerEmail.Size = new Size(158, 27);
+            TxtCustomerEmail.TabIndex = 15;
+            // 
+            // TxtCustomerPhone
+            // 
+            TxtCustomerPhone.Location = new Point(263, 195);
+            TxtCustomerPhone.Name = "TxtCustomerPhone";
+            TxtCustomerPhone.Size = new Size(165, 27);
+            TxtCustomerPhone.TabIndex = 14;
+            // 
+            // TxtCustomerBirthday
+            // 
+            TxtCustomerBirthday.Location = new Point(32, 195);
+            TxtCustomerBirthday.Name = "TxtCustomerBirthday";
+            TxtCustomerBirthday.Size = new Size(167, 27);
+            TxtCustomerBirthday.TabIndex = 13;
+            // 
+            // TxtCustomerAddress
+            // 
+            TxtCustomerAddress.Location = new Point(685, 111);
+            TxtCustomerAddress.Multiline = true;
+            TxtCustomerAddress.Name = "TxtCustomerAddress";
+            TxtCustomerAddress.Size = new Size(170, 81);
+            TxtCustomerAddress.TabIndex = 12;
+            // 
+            // TxtCustomerDocument
+            // 
+            TxtCustomerDocument.Location = new Point(471, 111);
+            TxtCustomerDocument.Name = "TxtCustomerDocument";
+            TxtCustomerDocument.Size = new Size(158, 27);
+            TxtCustomerDocument.TabIndex = 11;
+            // 
+            // TxtCustomerLast_Name
+            // 
+            TxtCustomerLast_Name.Location = new Point(263, 111);
+            TxtCustomerLast_Name.Name = "TxtCustomerLast_Name";
+            TxtCustomerLast_Name.Size = new Size(165, 27);
+            TxtCustomerLast_Name.TabIndex = 10;
+            // 
+            // TxtCustomerFirst_Name
+            // 
+            TxtCustomerFirst_Name.Location = new Point(32, 111);
+            TxtCustomerFirst_Name.Name = "TxtCustomerFirst_Name";
+            TxtCustomerFirst_Name.Size = new Size(167, 27);
+            TxtCustomerFirst_Name.TabIndex = 9;
+            // 
+            // TxtCustomerId
+            // 
+            TxtCustomerId.Location = new Point(32, 44);
+            TxtCustomerId.Name = "TxtCustomerId";
+            TxtCustomerId.ReadOnly = true;
+            TxtCustomerId.Size = new Size(125, 27);
+            TxtCustomerId.TabIndex = 8;
+            TxtCustomerId.Text = "0";
+            TxtCustomerId.TextAlign = HorizontalAlignment.Right;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(471, 172);
+            label10.Name = "label10";
+            label10.Size = new Size(113, 20);
+            label10.TabIndex = 7;
+            label10.Text = "Customer Email";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(685, 88);
+            label9.Name = "label9";
+            label9.Size = new Size(129, 20);
+            label9.TabIndex = 6;
+            label9.Text = "Customer Address";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(263, 172);
+            label8.Name = "label8";
+            label8.Size = new Size(117, 20);
+            label8.TabIndex = 5;
+            label8.Text = "Customer Phone";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(471, 88);
+            label7.Name = "label7";
+            label7.Size = new Size(145, 20);
+            label7.TabIndex = 4;
+            label7.Text = "Customer Document";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(32, 172);
+            label6.Name = "label6";
+            label6.Size = new Size(131, 20);
+            label6.TabIndex = 3;
+            label6.Text = "Customer Birthday";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(32, 88);
+            label5.Name = "label5";
+            label5.Size = new Size(147, 20);
+            label5.TabIndex = 2;
+            label5.Text = "Customer First Name";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(263, 88);
+            label4.Name = "label4";
+            label4.Size = new Size(146, 20);
+            label4.TabIndex = 1;
+            label4.Text = "Customer Last Name";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(32, 21);
+            label3.Name = "label3";
+            label3.Size = new Size(89, 20);
+            label3.TabIndex = 0;
+            label3.Text = "Customer Id";
             // 
             // CustomerView
             // 
@@ -397,9 +401,9 @@
             tabControl1.ResumeLayout(false);
             tabPageCustomerList.ResumeLayout(false);
             tabPageCustomerList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DgCustomer).EndInit();
             tabPageCustomerDetail.ResumeLayout(false);
             tabPageCustomerDetail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)DgCustomer).EndInit();
             ResumeLayout(false);
         }
 
