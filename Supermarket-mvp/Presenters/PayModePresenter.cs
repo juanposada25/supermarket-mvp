@@ -33,7 +33,7 @@ namespace Supermarket_mvp.Presenters
 
             loadAllPayModeList();
 
-            this.view.show();
+            this.view.Show();
         }
 
         private void loadAllPayModeList()
