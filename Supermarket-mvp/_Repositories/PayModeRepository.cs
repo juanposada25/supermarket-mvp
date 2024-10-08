@@ -3,32 +3,63 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Data.SqlClient;
 using Microsoft.Data;
+using Microsoft.Data.SqlClient;
 using Supermarket_mvp.Models;
 using System.Data;
+
 
 namespace Supermarket_mvp._Repositories
 {
     internal class PayModeRepository : BaseRepository, IPayModeRepository
     {
-        public PayModeRepository(string connectionString) 
+        public PayModeRepository(string connectionString)
         {
-            this.connectionString = connectionString;   
+            this.connectionString = connectionString;
         }
         public void Add(PayModeModel payModeModel)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "INSERT INTO PayMode VALUES (@name, @observation)";
+                command.Parameters.Add("@name", SqlDbType.NVarChar).Value = payModeModel.Name;
+                command.Parameters.Add("@observation", SqlDbType.NVarChar).Value = payModeModel.Observation;
+                command.ExecuteNonQuery();
+            }
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "DELETE FROM PayMode WHERE Pay_Mode_Id = @id";
+                command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                command.ExecuteNonQuery();
+            }
         }
 
         public void Edit(PayModeModel payModeModel)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = @"UPDATE PayMode SET Pay_Mode_Name = @name,
+                                        Pay_Mode_Observation = @observation
+                                        WHERE Pay_Mode_Id = @Id";
+                command.Parameters.Add("@name", SqlDbType.NVarChar).Value = payModeModel.Name;
+                command.Parameters.Add("@observation", SqlDbType.NVarChar).Value = payModeModel.Observation;
+                command.Parameters.Add("@id", SqlDbType.Int).Value = payModeModel.Id;
+                command.ExecuteNonQuery();
+
+            }
         }
 
         public IEnumerable<PayModeModel> GetAll()
@@ -39,7 +70,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = "SELECT * FROM PayMode ORDER BY Pay_Mode_Id DESC";
+                command.CommandText = "SELECT * FROM Paymode ORDER BY Pay_Mode_Id DESC";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -65,9 +96,8 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = @"SELECT * FROM PayMode
-                                      WHERE Pay_Mode_Id=@id or Pay_Mode_Name LIKE @name+ '%'
-                                      ORDER By Pay_Mode_Id DESC";
+                command.CommandText = @"SELECT * FROM PayMode WHERE Pay_Mode_Id=@id or Pay_Mode_Name LIKE @name+ '%'
+                                      ORDER by Pay_Mode_Id DESC";
                 command.Parameters.Add("@id", SqlDbType.Int).Value = payModeId;
                 command.Parameters.Add("@name", SqlDbType.NVarChar).Value = payModeName;
                 using (var reader = command.ExecuteReader())
@@ -78,7 +108,7 @@ namespace Supermarket_mvp._Repositories
                         payModeModel.Id = (int)reader["Pay_Mode_Id"];
                         payModeModel.Name = reader["Pay_Mode_Name"].ToString();
                         payModeModel.Observation = reader["Pay_Mode_Observation"].ToString();
-                        payModeList.Add(payModeModel) ;
+                        payModeList.Add(payModeModel);
                     }
                 }
             }
