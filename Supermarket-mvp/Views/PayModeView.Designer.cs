@@ -158,11 +158,14 @@
             // 
             // DgPayMode
             // 
+            DgPayMode.AllowUserToAddRows = false;
+            DgPayMode.AllowUserToDeleteRows = false;
             DgPayMode.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DgPayMode.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgPayMode.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgPayMode.Location = new Point(23, 93);
             DgPayMode.Name = "DgPayMode";
+            DgPayMode.ReadOnly = true;
             DgPayMode.RowHeadersWidth = 51;
             DgPayMode.Size = new Size(558, 220);
             DgPayMode.TabIndex = 3;
