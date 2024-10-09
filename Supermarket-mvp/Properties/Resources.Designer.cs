@@ -113,6 +113,16 @@ namespace Supermarket_mvp.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Categorie {
+            get {
+                object obj = ResourceManager.GetObject("Categorie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cerrar {
             get {
                 object obj = ResourceManager.GetObject("cerrar", resourceCulture);
@@ -196,6 +206,16 @@ namespace Supermarket_mvp.Properties {
         internal static System.Drawing.Bitmap products1 {
             get {
                 object obj = ResourceManager.GetObject("products1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap products2 {
+            get {
+                object obj = ResourceManager.GetObject("products2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
