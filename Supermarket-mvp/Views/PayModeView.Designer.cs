@@ -81,9 +81,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(154, 33);
+            label1.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(143, 26);
             label1.Name = "label1";
-            label1.Size = new Size(74, 20);
+            label1.Size = new Size(164, 35);
             label1.TabIndex = 0;
             label1.Text = "Pay Mode";
             // 
@@ -192,9 +193,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Showcard Gothic", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(23, 14);
             label2.Name = "label2";
-            label2.Size = new Size(122, 20);
+            label2.Size = new Size(186, 23);
             label2.TabIndex = 0;
             label2.Text = "Search Pay Mode";
             // 
@@ -264,27 +266,30 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(32, 157);
             label5.Name = "label5";
-            label5.Size = new Size(158, 20);
+            label5.Size = new Size(168, 20);
             label5.TabIndex = 2;
             label5.Text = "Pay Mode Observation";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(32, 89);
             label4.Name = "label4";
-            label4.Size = new Size(118, 20);
+            label4.Size = new Size(124, 20);
             label4.TabIndex = 1;
             label4.Text = "Pay Mode Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(32, 20);
             label3.Name = "label3";
-            label3.Size = new Size(91, 20);
+            label3.Size = new Size(96, 20);
             label3.TabIndex = 0;
             label3.Text = "Pay Mode Id";
             // 

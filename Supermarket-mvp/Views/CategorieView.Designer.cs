@@ -72,9 +72,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(182, 44);
+            label1.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(157, 35);
             label1.Name = "label1";
-            label1.Size = new Size(74, 20);
+            label1.Size = new Size(176, 35);
             label1.TabIndex = 1;
             label1.Text = "Categorie";
             // 
@@ -193,9 +194,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(40, 21);
+            label2.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(40, 15);
             label2.Name = "label2";
-            label2.Size = new Size(122, 20);
+            label2.Size = new Size(216, 26);
             label2.TabIndex = 0;
             label2.Text = "Search Categorie";
             // 
@@ -265,9 +267,10 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(44, 166);
             label6.Name = "label6";
-            label6.Size = new Size(154, 20);
+            label6.Size = new Size(160, 20);
             label6.TabIndex = 3;
             label6.Text = "Categorie Description";
             // 
@@ -282,18 +285,20 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(44, 98);
             label4.Name = "label4";
-            label4.Size = new Size(118, 20);
+            label4.Size = new Size(122, 20);
             label4.TabIndex = 1;
             label4.Text = "Categorie Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(44, 34);
             label3.Name = "label3";
-            label3.Size = new Size(91, 20);
+            label3.Size = new Size(94, 20);
             label3.TabIndex = 0;
             label3.Text = "Categorie Id";
             // 

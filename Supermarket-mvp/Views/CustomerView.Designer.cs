@@ -81,9 +81,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(192, 35);
+            label1.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(164, 33);
             label1.Name = "label1";
-            label1.Size = new Size(72, 20);
+            label1.Size = new Size(169, 35);
             label1.TabIndex = 1;
             label1.Text = "Customer";
             // 
@@ -202,9 +203,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(32, 17);
+            label2.Font = new Font("Showcard Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(32, 11);
             label2.Name = "label2";
-            label2.Size = new Size(120, 20);
+            label2.Size = new Size(212, 26);
             label2.TabIndex = 0;
             label2.Text = "Search Customer";
             // 
@@ -317,72 +319,80 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.Location = new Point(471, 172);
             label10.Name = "label10";
-            label10.Size = new Size(113, 20);
+            label10.Size = new Size(119, 20);
             label10.TabIndex = 7;
             label10.Text = "Customer Email";
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.Location = new Point(685, 88);
             label9.Name = "label9";
-            label9.Size = new Size(129, 20);
+            label9.Size = new Size(138, 20);
             label9.TabIndex = 6;
             label9.Text = "Customer Address";
             // 
             // label8
             // 
             label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.Location = new Point(263, 172);
             label8.Name = "label8";
-            label8.Size = new Size(117, 20);
+            label8.Size = new Size(125, 20);
             label8.TabIndex = 5;
             label8.Text = "Customer Phone";
             // 
             // label7
             // 
             label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.Location = new Point(471, 88);
             label7.Name = "label7";
-            label7.Size = new Size(145, 20);
+            label7.Size = new Size(154, 20);
             label7.TabIndex = 4;
             label7.Text = "Customer Document";
             // 
             // label6
             // 
             label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(32, 172);
             label6.Name = "label6";
-            label6.Size = new Size(131, 20);
+            label6.Size = new Size(141, 20);
             label6.TabIndex = 3;
             label6.Text = "Customer Birthday";
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(32, 88);
             label5.Name = "label5";
-            label5.Size = new Size(147, 20);
+            label5.Size = new Size(158, 20);
             label5.TabIndex = 2;
             label5.Text = "Customer First Name";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(263, 88);
             label4.Name = "label4";
-            label4.Size = new Size(146, 20);
+            label4.Size = new Size(156, 20);
             label4.TabIndex = 1;
             label4.Text = "Customer Last Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(32, 21);
             label3.Name = "label3";
-            label3.Size = new Size(89, 20);
+            label3.Size = new Size(95, 20);
             label3.TabIndex = 0;
             label3.Text = "Customer Id";
             // 

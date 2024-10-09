@@ -114,7 +114,7 @@ namespace Supermarket_mvp._Repositories
             {
                 connection.Open();
                 command.Connection = connection;
-                command.CommandText = @"SELECT * FROM Customer WHERE Customer_Id=@id or Customer_First_Name LIKE @name+ '%'
+                command.CommandText = @"SELECT * FROM Customer WHERE Customer_Id=@id or Customer_First_Name LIKE @first_Name+ '%'
                                       ORDER by Customer_Id DESC";
                 command.Parameters.Add("@id", SqlDbType.Int).Value = customerId;
                 command.Parameters.Add("@first_Name", SqlDbType.NVarChar).Value = customerFirst_Name;
