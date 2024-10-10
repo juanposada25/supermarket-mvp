@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Supermarket_mvp._Repositories;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Supermarket_mvp.Views
 {
@@ -15,6 +18,7 @@ namespace Supermarket_mvp.Views
         private bool isEdit;
         private bool isSuccessful;
         private string message;
+
         public ProductView()
         {
             InitializeComponent();
@@ -23,6 +27,9 @@ namespace Supermarket_mvp.Views
             tabControl1.TabPages.Remove(tabPageProductDetail);
             BtnClose.Click += delegate { this.Close(); };
         }
+
+        CategorieId cat = new CategorieId();
+
         private void AssociateAndRaiseViewEvents()
         {
             BtnSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
@@ -165,6 +172,14 @@ namespace Supermarket_mvp.Views
                 instance.BringToFront();
             }
             return instance;
+        }
+
+        private void ProductView_Load(object sender, EventArgs e)
+        {
+            CxtProductCategorie_Id.DataSource = cat.CargarCombo();
+
+            CxtProductCategorie_Id.DisplayMember = "Categorie_Id";
+            CxtProductCategorie_Id.ValueMember = "Categorie_Id";
         }
     }
 }

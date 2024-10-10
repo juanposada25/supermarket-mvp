@@ -12,6 +12,7 @@ namespace Supermarket_mvp._Repositories
 {
     internal class ProductRepository : BaseRepository, IProductRepository
     {
+
         public ProductRepository(string connectionString)
         {
             this.connectionString = connectionString;
@@ -55,7 +56,7 @@ namespace Supermarket_mvp._Repositories
                 command.CommandText = @"UPDATE Product SET Product_Name = @name,
                                         Product_Price = @price,
                                         Product_Stock = @stock,
-                                        Product_Categorie_Id = @categorie_Id,
+                                        Product_Categorie_Id = @categorie_Id
                                         WHERE Product_Id = @Id";
                 command.Parameters.Add("@name", SqlDbType.NVarChar).Value = productModel.Name;
                 command.Parameters.Add("@price", SqlDbType.Int).Value = productModel.Price;
@@ -124,5 +125,6 @@ namespace Supermarket_mvp._Repositories
 
             return productList;
         }
+        
     }
 }

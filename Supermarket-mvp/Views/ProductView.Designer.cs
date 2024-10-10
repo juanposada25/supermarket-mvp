@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
             label1 = new Label();
             pictureBox1 = new PictureBox();
@@ -54,12 +55,14 @@
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
+            categorieViewBindingSource = new BindingSource(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabControl1.SuspendLayout();
             tabPageProductList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DgProduct).BeginInit();
             tabPageProductDetail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)categorieViewBindingSource).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -166,6 +169,7 @@
             DgProduct.AllowUserToAddRows = false;
             DgProduct.AllowUserToDeleteRows = false;
             DgProduct.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            DgProduct.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DgProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgProduct.Location = new Point(37, 100);
             DgProduct.Name = "DgProduct";
@@ -246,6 +250,7 @@
             // CxtProductCategorie_Id
             // 
             CxtProductCategorie_Id.FormattingEnabled = true;
+            CxtProductCategorie_Id.Items.AddRange(new object[] { "200000", "200001" });
             CxtProductCategorie_Id.Location = new Point(249, 196);
             CxtProductCategorie_Id.Name = "CxtProductCategorie_Id";
             CxtProductCategorie_Id.Size = new Size(143, 28);
@@ -327,6 +332,10 @@
             label3.TabIndex = 0;
             label3.Text = "Product Id";
             // 
+            // categorieViewBindingSource
+            // 
+            categorieViewBindingSource.DataSource = typeof(CategorieView);
+            // 
             // ProductView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -336,6 +345,7 @@
             Controls.Add(panel1);
             Name = "ProductView";
             Text = "Product Management";
+            Load += ProductView_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -345,6 +355,7 @@
             ((System.ComponentModel.ISupportInitialize)DgProduct).EndInit();
             tabPageProductDetail.ResumeLayout(false);
             tabPageProductDetail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)categorieViewBindingSource).EndInit();
             ResumeLayout(false);
         }
 
@@ -376,5 +387,6 @@
         private ComboBox CxtProductCategorie_Id;
         private Button BtnCancel;
         private Button BtnSave;
+        private BindingSource categorieViewBindingSource;
     }
 }
