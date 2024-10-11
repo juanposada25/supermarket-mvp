@@ -2,4 +2,4 @@ Link del repositorio:
 
 https://github.com/juanposada25/supermarket-mvp.git
 
-Trabajamos Iker Mainguez y Juan Posada
+Trabajamos Iker Mainguez Victor Marin y Juan Posada

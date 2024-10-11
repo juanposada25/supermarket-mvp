@@ -258,7 +258,7 @@
             // 
             // TxtProductPrice
             // 
-            TxtProductPrice.Location = new Point(43, 196);
+            TxtProductPrice.Location = new Point(43, 208);
             TxtProductPrice.Name = "TxtProductPrice";
             TxtProductPrice.Size = new Size(125, 27);
             TxtProductPrice.TabIndex = 8;

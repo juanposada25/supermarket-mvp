@@ -9,6 +9,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|c:\\users\\juand\\desktop\\estudio\\supermarket-mvp\\supermarket-mvp\\views\\productview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|solutionrelative:supermarket-mvp\\views\\productview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|c:\\users\\juand\\desktop\\estudio\\supermarket-mvp\\supermarket-mvp\\_repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|solutionrelative:supermarket-mvp\\_repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|c:\\users\\juand\\desktop\\estudio\\supermarket-mvp\\supermarket-mvp\\_repositories\\categorierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E1BA539-2DEE-43FF-83E1-0E16DF8DD799}|Supermarket-mvp\\Supermarket-mvp.csproj|solutionrelative:supermarket-mvp\\_repositories\\categorierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,9 +44,9 @@
               "RelativeDocumentMoniker": "Supermarket-mvp\\Views\\ProductView.cs",
               "ToolTip": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\Views\\ProductView.cs",
               "RelativeToolTip": "Supermarket-mvp\\Views\\ProductView.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAmwLQAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAcwLUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:55:29.282Z",
+              "WhenOpened": "2024-10-11T00:13:14.555Z",
               "EditorCaption": ""
             },
             {
@@ -50,8 +58,34 @@
               "ToolTip": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\Views\\ProductView.cs [Dise\u00F1o]",
               "RelativeToolTip": "Supermarket-mvp\\Views\\ProductView.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T16:55:09.453Z",
+              "WhenOpened": "2024-10-11T00:11:12.873Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\_Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Supermarket-mvp\\_Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\_Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Supermarket-mvp\\_Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:10:47.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategorieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\_Repositories\\CategorieRepository.cs",
+              "RelativeDocumentMoniker": "Supermarket-mvp\\_Repositories\\CategorieRepository.cs",
+              "ToolTip": "C:\\Users\\juand\\Desktop\\Estudio\\Supermarket-mvp\\Supermarket-mvp\\_Repositories\\CategorieRepository.cs",
+              "RelativeToolTip": "Supermarket-mvp\\_Repositories\\CategorieRepository.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwCwAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T17:17:07.79Z",
+              "EditorCaption": ""
             }
           ]
         }
