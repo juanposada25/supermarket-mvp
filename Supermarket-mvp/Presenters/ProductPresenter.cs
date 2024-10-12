@@ -59,27 +59,15 @@ namespace Supermarket_mvp.Presenters
             {
                 product.Price = price;
             }
-            else
-            {
-                MessageBox.Show("Este campo es tipo numerico.");
-            }
             int stock;
             if (int.TryParse(view.ProductStock, out stock))
             {
                 product.Stock = stock;
             }
-            else
-            {
-                MessageBox.Show("Este campo es tipo numerico.");
-            }
             int categorie_id;
             if (int.TryParse(view.ProductCategorie_Id, out categorie_id))
             {
                 product.Categorie_Id = categorie_id;
-            }
-            else
-            {
-                MessageBox.Show("Este campo es tipo numerico.");
             }
 
             try
